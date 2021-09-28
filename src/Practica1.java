@@ -1,16 +1,16 @@
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 import java.io.*;
 
-public class Practica1 {
+class Practica1 {
 
     public static void Mostrar(String archivo) throws FileNotFoundException, IOException {
 
         // Array de Nombres y Notas
+
         ArrayList<String> Nombres = new ArrayList<>();
         ArrayList<Double> Notas = new ArrayList<>();
         FileReader f = new FileReader(archivo);
@@ -26,7 +26,6 @@ public class Practica1 {
                 Notas.add(n);
             }
         }
-
         reader.close();
         // Se instancia el fichero y el escritor de cuyo archivo volcaremos el resultado
         FileWriter fichero = null;
@@ -53,16 +52,9 @@ public class Practica1 {
             pw.print("|     La media es: " + ((Notas.get(i) + Notas.get(i + 2) + Notas.get(i + 3))) / 4);
         }
         pw.close();
-        System.out.println("Se ha creado el archivo: " + fichero);
+        System.out.println("Se ha creado el archivo: " + fichero );
     }
-
     public static void main(String[] args) throws IOException {
         Mostrar("/Users/josecarlos/Documents/FP Grado Superior/2º Curso/Programación multimedia y dispositivos móviles - Goyo/1º Tema/Listado de nombres aleatorios.csv");
     }
-
-
-}
-
-
-
 }
