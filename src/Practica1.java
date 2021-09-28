@@ -56,6 +56,10 @@ public class Practica1 {
         System.out.println("Se ha creado el archivo: " + fichero);
     }
 
+    public static void main(String[] args) throws IOException {
+        Mostrar("/Users/josecarlos/Documents/FP Grado Superior/2º Curso/Programación multimedia y dispositivos móviles - Goyo/1º Tema/Listado de nombres aleatorios.csv");
+    }
+
 
 }
 
